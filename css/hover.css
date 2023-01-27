@@ -1,0 +1,107 @@
+:root {
+    --primiry-color:
+        #C4E5F6;
+    --text-color:
+        #D1D1D1;
+    --acent-color:
+        #DC493A;
+}
+
+.h_style::before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: var(--acent-color);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.h_style::after {
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid var(--primiry-color);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 1s ease;
+}
+
+.h_style:hover::before {
+    opacity: 1;
+}
+
+.h_style:hover::after {
+    left: 100%;
+}
+
+.hover_me::after {
+    content: '';
+    width: 100%;
+    border-bottom: .2rem solid var(--acent-color);
+    position: absolute;
+    bottom: 0px;
+    left: 100%;
+    transition: all 1s ease;
+}
+
+.hover_me:hover {
+    scale: 1.08;
+}
+
+.hover_me:hover::after {
+    left: 0;
+}
+
+.main_img:hover img {
+    scale: 1.2;
+}
+
+.card:hover #card_anim::before {
+    rotate: 45deg;
+    left: 2px;
+    top: 2px;
+}
+
+.card:hover #card_anim2::before {
+    rotate: -90deg;
+    left: 22px;
+    top: -20px;
+    scale: 0.8;
+}
+
+.card:hover #card_anim3::before {
+    rotate: 45deg;
+    scale: 1;
+}
+
+.w-videos a:hover {
+    scale: 1.05;
+}
+
+.card_sec_5:hover {
+    transform: translateY(-25px);
+}
+
+.quote p:hover::before {
+    scale: 1.05;
+}
+
+.input input[type="submit"]:hover {
+    color: #DC493A;
+}
+
+#togglenav:hover {
+    font-size: 3.2rem;
+    width: 5.2rem;
+    transition: .5s;
+}
+
+.social a i:hover {
+    scale: 1.1;
+}
