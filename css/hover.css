@@ -50,10 +50,10 @@
     transition: all .5s ease;
 }
 
-//*
+/*
 .hover_me:hover {
     scale: 1.08;
-}*//
+}*/
 
 .hover_me:hover::after {
     left: 0;
